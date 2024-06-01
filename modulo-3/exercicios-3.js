@@ -8,3 +8,14 @@ while (number >= 0){
     number -= 1
 
 }
+
+professor
+let contador = 0
+let numero = 7
+
+while (contador <= numero){
+    console.log(contador)
+
+    contador += 1
+
+}
