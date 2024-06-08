@@ -6,3 +6,10 @@ for (let i = 0; i < palavra.length; i++){
     console.log(palavra[i].toUpperCase())
 
 }
+
+ou
+
+for (let letra of palavra){
+    console.log(palavra[i].toUpperCase())
+
+}
