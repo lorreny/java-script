@@ -1,0 +1,44 @@
+/// 7 - DOM e Listas:
+
+//Crie uma cópia do documento base: Ex00.html e nomeie essa cópia de Ex07.html
+
+// 7.1 - Crie um algoritmo que lê a seguinte lista de nomes e posiciona esses nomes num elemento li dentro da ul no documento HTML
+let names = ["Alice", "Bob", "Charlie", "Diana", "Ethan", "Fiona", "George", "Hannah", "Ian", "Julia"];
+
+
+// 7.2 - Crie uma função que filtre os nomes dessa lista a partir de caracteres digitados em um input.
+
+// 7.3 - Crie um botão que ao ser clicado remove o último item da lista de nome
+
+// 7.4 - Crie uma função que altera o segundo valor da lista para o valor escrito em um input
+
+
+HTML PARA O EXERCÍCIO 7
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Criando elementos e posiconando elementos HTML com DOM</h1>
+    <p>Lista de amigos</p>
+    <ul id="resultado"></ul>
+    <button onclick="action()">Clique em mim para ver a lista</button>
+
+
+    <script>
+        function action() {
+            listaHTML = document.getElementById('resultado')
+            let names = ["Alice", "Bob", "Charlie", "Diana", "Ethan", "Fiona", "George", "Hannah", "Ian", "Julia"];
+            // Escreva seu código aqui!
+        }
+
+    </script>
+</body>
+
+</html>
