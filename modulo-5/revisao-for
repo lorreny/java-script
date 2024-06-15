@@ -1,0 +1,22 @@
+//revisao FOR:
+
+let meus_filmes = ['Homem Aranha', 'A Múmia', 'O Sexto sentido']
+
+console.log(meus_filmes[0])
+
+
+// imprime os valores de uma lista através de indexação
+for (let i = 0; i < meus_filmes.length; i += 1) {
+    console.log(meus_filmes[i])
+}
+
+
+//imprime os valores de uma lista da variável "filme" que será reatribuida para cada valor da lista
+for (let filme of meus_filmes) {
+  console.log(filme);
+}
+
+//imprime os indices de uma lista
+for (let x in meus_filmes) {
+    console.log(x)  // 
+}
