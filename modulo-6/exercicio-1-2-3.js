@@ -15,3 +15,13 @@ result = "Olá,"
 console.log(result, 'Bruno')
 console.log(result, 'Amanda')
 console.log(result, 'Shellen')
+
+function boasVindas(nome) {
+    return `Seja bem-vindo ${nome}`;
+}
+
+boasVindas('Mariana');  // Aqui o valor do parâmetro nome é a string "Mariana"
+boasVindas('Amanda'); // Aqui o valor do parâmetro nome é o número 42
+
+console.log(boasVindas('Mariana')); 
+console.log(boasVindas('Amanda')); 
