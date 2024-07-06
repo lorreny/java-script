@@ -22,15 +22,20 @@
         let bntDec = document.getElementById('decrementar')
         let spanzinho = document.getElementById('contador')
         let contador = 0
-
-        function incrementar(decrementar, contador){
-
-            //
-            //append para incrementar
+        //funcao incremente
+        //contador chama span  - funcao do dom
+        //decrementa
+        function decrementar(){
+            contador -= 1
+            spanzinho.innerText = contador
 
         }
-        
-        
+        bntDec.addEventListener('click', decrementar) //altera o valor no click
+
+        function incrementar(){
+            contador += 1
+            spanzinho.innerText = contador
+        }
 
     </script>
 </body>
