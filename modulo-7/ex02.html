@@ -14,7 +14,20 @@
     <button id="reset">Resetar</button>
 
     <script>
-        // Ex-2 implemente a função "changeColor", de forma que quando  botão é clicado o fundo da tela muda para a cor indicada no botã
+        // Ex-2 implemente a função "changeColor", 
+        //de forma que quando  botão é clicado o fundo da tela muda para a cor indicada no botã
+
+        function changeColor(cor){
+            
+            document.body.style.backgroundColor = cor
+        }
+
+        function reset(){
+            let color = '#ffffff'
+
+        }
+        color.addEventListener('click', reset) //altera o valor no click
+
 
     </script>
 </body>
