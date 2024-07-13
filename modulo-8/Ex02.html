@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="item">Um item</p>
+    <p class="item">Um item</p>
+    <p class="item">Um item</p>
+    <p class="item">Um item</p>
+    <p class="item">Um item</p>
+    <button id="faz-algo">Faz um trem</button>
+
+    <script>
+        //Implemente a função necessaria para capturar todos os elementos da classe "item" e altere o texto desses items para um a sua escolha.
+        let items = document.getElementsByClassName('item');
+
+        let button = document.getElementById('faz-algo');
+
+        function action() {
+            for (let i = 0; i < items.length; i += 1) {
+                items[i].innerText = `Esse é o elemento de índice ${i} da lista items`;
+            }
+        }
+
+        button.addEventListener('click', action);
+    </script>
+</body>
+
+</html>
