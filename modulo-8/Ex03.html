@@ -18,6 +18,8 @@
         //Atenção nesse exercício só vale escrever dentro da tag "script".
 
         //Implemente a função necessaria para alterar a cor de fundo dos paragrafos na tela e o texto da tag h1 para um texto à sua escolha.
+        let title = document.getElementsByTagName('h1');
+        console.log(title);
         let paragrafos = document.getElementsByTagName('p');
 
         let buttonMagic = document.getElementById('btn-action');
@@ -35,11 +37,12 @@
 
         // A função "doMagic" executa um laço de repetição "for" que percorre a lista de parágrafos capturados e altera o valor textual (innerText) de cada parágrafo.
         //A propriedade "color" e a propriedade "backgroundColor" também são alteradas, utilizando a função "getRandomColor" para alterar as cores dessas propriedades de forma randômica.
-
+        
         function doMagic() {
             //for off p - elemento da lista of pega cada um dos elementos da lista
             //é o mesmo que for(let i=0; i < parafrafo.length; i++) esse é ideal para pegar por inidce se precisar
             for (let p of paragrafos) {
+                title[0].innerText = "Eu fui capaz de alterar você";
                 p.innerText = 'Você fez magia!';
                 //p.style.color = getRandomColor();
                 p.style.backgroundColor = getRandomColor();
@@ -47,7 +50,6 @@
         }
 
         buttonMagic.addEventListener('click', doMagic);
-
 
     </script>
 </body>
