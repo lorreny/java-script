@@ -7,17 +7,43 @@
     <title>Document</title>
 </head>
 
-<body>
+<body style="margin: 200PX;">
     <h1>Titulo</h1>
-    <p>Primeiro paragrafo</p>
-    <p>Segundo paragrafo</p>
-    <p>Terceiro paragrafo</p>
+    <p style="padding: 20PX;">Primeiro paragrafo</p>
+    <p style="padding: 20PX;">Segundo paragrafo</p>
+    <p style="padding: 20PX;">Terceiro paragrafo</p>
 
-    <button id="btn-action"></button>
+    <button id="btn-action" style="padding: 10px; background: pink;">Clique aqui e veja o que acontece</button>
     <script>
         //Atenção nesse exercício só vale escrever dentro da tag "script".
 
         //Implemente a função necessaria para alterar a cor de fundo dos paragrafos na tela e o texto da tag h1 para um texto à sua escolha.
+        let paragrafos = document.getElementsByTagName('p');
+
+        let buttonMagic = document.getElementById('btn-action');
+
+        // Esta função cria uma cor aleatória em hexadecimal.
+        function getRandomColor() {
+            let letters = '9876543210FEDCBA';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // A função "doMagic" executa um laço de repetição "for" que percorre a lista de parágrafos capturados e altera o valor textual (innerText) de cada parágrafo.
+        //A propriedade "color" e a propriedade "backgroundColor" também são alteradas, utilizando a função "getRandomColor" para alterar as cores dessas propriedades de forma randômica.
+
+        function doMagic() {
+            for (let p of paragrafos) {
+                p.innerText = 'Você fez magia!';
+                //p.style.color = getRandomColor();
+                p.style.backgroundColor = getRandomColor();
+            }
+        }
+
+        buttonMagic.addEventListener('click', doMagic);
 
 
     </script>
