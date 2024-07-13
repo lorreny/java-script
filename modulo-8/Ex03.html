@@ -29,6 +29,7 @@
             for (let i = 0; i < 6; i++) {
                 color += letters[Math.floor(Math.random() * 16)];
             }
+            console.log(color);
             return color;
         }
 
@@ -36,6 +37,8 @@
         //A propriedade "color" e a propriedade "backgroundColor" também são alteradas, utilizando a função "getRandomColor" para alterar as cores dessas propriedades de forma randômica.
 
         function doMagic() {
+            //for off p - elemento da lista of pega cada um dos elementos da lista
+            //é o mesmo que for(let i=0; i < parafrafo.length; i++) esse é ideal para pegar por inidce se precisar
             for (let p of paragrafos) {
                 p.innerText = 'Você fez magia!';
                 //p.style.color = getRandomColor();
