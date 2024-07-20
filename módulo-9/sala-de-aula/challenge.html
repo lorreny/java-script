@@ -155,10 +155,17 @@
     }
 
 
-    let plano = document.querySelector('.plano')
+    let plano = document.querySelectorAll('.plano')
+    console.log(plano)
 
-    plano.addEventListener('onmouseover', function (){
-        
-    });
+    function captureAll(){
+        for(let elemento of plano){
+            elemento.style.backgroundColor  = 'dark'
+
+        }
+        plano.addEventListener('mouseover', captureAll)
+
+    }
+
 </script>
 </html>
