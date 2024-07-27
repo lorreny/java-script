@@ -1,0 +1,57 @@
+https://www.youtube.com/watch?v=WiiJ8i1t0rg
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gerenciador de tarefa</h1>
+
+    <button onclick="exibirPendentes()">Pendentes</button>
+    <button onclick="exibirConcluidas()">Concluídas</button>
+    <button onclick="criarTarefa()">+</button>
+
+    <hr>
+    
+    <div id="painel">
+
+    </div>
+
+    <script>
+        let pendentes = [];
+        let concluidas = [];
+
+        function exibirPendentes(){
+            painel.innerHTML = "";
+            for (let i = 0; i < pendentes.length; i++){
+                painel.innerHTML += `<button onclick="concluirTarefa(this)">${pendentes[i]}</button><br>`;
+            }
+        }
+
+        function exibirConcluidas(){
+            painel.innerHTML = "";
+            for (let i = 0; i < concluidas.length; i++){
+                painel.innerHTML += `${concluidas[i]}<br>`;
+            }
+        }
+
+        function criarTarefa(){
+            let nova = prompt('Informe a tarefa:');
+            if (nova == ""){
+                alert('Não pode adicionar uma tarefa vazia.')
+            }else{
+                pendentes.push(nova);
+            }
+        }
+
+        function concluirTarefa(botao){
+            concluidas.push
+            bota.innerHTML
+        }
+
+    </script>
+</body>
+</html>
