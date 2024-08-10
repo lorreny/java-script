@@ -1,0 +1,21 @@
+Repositório no github:
+https://github.com/thiagooshiro/js-classes.git
+
+Orientações:
+- Abra o VSCode no diretório onde você irá trabalhar;
+- Abra o terminal integrado no VSCode;
+- Execute o comando abaixo:
+git clone https://github.com/thiagooshiro/js-classes.git
+
+Em seguida:
+cd js-classes
+cd javascript-classes
+cd aula12;
+
+E deixe também aberto na aba lateral do navegador de arquivos a aula 12
+
+Caso queira deixar separado vá até o diretório onde os arquivos estão e copie a pasta "aula12"
+para o diretório onde você está trabalhando.
+
+Se for utilizar algum pendrive ou mídia externa, utilize apenas no final da aula para salvar seus dados
+não trabalhe dela, trabalhe sempre localmente.htt
