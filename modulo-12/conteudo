@@ -18,4 +18,15 @@ Caso queira deixar separado vá até o diretório onde os arquivos estão e copi
 para o diretório onde você está trabalhando.
 
 Se for utilizar algum pendrive ou mídia externa, utilize apenas no final da aula para salvar seus dados
-não trabalhe dela, trabalhe sempre localmente.htt
+não trabalhe dela, trabalhe sempre localmente
+
+
+Utilize o seguinte endpoint para o exercício 3:sudo dng
+
+https://www.themealdb.com/api/json/v1/1/random.php
+
+
+
+
+
+npm install -g http-server
