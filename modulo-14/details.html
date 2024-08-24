@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Receita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="details">
+    <header class="header">
+        <img src="assets/img/meal-icon.png" alt="Ícone de refeição" class="header-icon" />
+        <h1 id="titulo-receita">Detalhes da Receita</h1>
+    </header>
+    
+    <div class="recipe-container">
+        <img id="imagem-receita" src="" alt="Imagem da Receita" class="recipe-image">
+        <div class="recipe-info">
+            <p id="instrucoes-receita" class="recipe-description"></p>
+            <button id="show-more" class="show-more-btn">Mais</button>
+        </div>
+    </div>
+
+    <div id="ingredientes-receita" class="recipe-ingredients">
+        <h2>Ingredientes</h2>
+        <ul>
+            <!-- Ingredientes serão inseridos aqui dinamicamente -->
+        </ul>
+    </div>
+        
+    <p id="erro" style="color: red;"></p>
+
+    <script src="details.js"></script>
+</body>
+</html>

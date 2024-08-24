@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas saborosas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home">
+    <header class="header">
+        <img src="assets/img/meal-icon.png" alt="Ícone de refeição" class="header-icon" />
+        <h1>Confira nossas receitas</h1>
+    </header>
+    
+    <div class="search-container-wrapper">
+        <div class="search-container">
+            <label for="category-select">Escolha uma categoria:</label>
+            <select id="category-select">
+                <option value="">Selecione uma categoria</option>
+            </select>
+        </div>
+
+        <div class="search-container">
+            <label for="name-search">Digite uma letra:</label>
+            <input id="name-search" type="text" placeholder="Digite uma letra" />
+        </div>
+    </div>
+
+    <h2 id="result-title">Últimas Receitas</h2>
+    <div id="latest-recipe-container" class="recipe-container"></div>
+
+    <div id="recipe-container" class="recipe-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
