@@ -1,0 +1,66 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Largura do container */
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0; /* Margem para espaçamento entre botões */
+    width: calc(100% - 20px); /* Largura dos botões */
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.feedback {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.reload {
+    background-color: #007bff;
+}
+
+.reload:hover {
+    background-color: #0056b3;
+}
+
+.opcoes-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões se movam para a próxima linha */
+    justify-content: space-between; /* Alinha as colunas */
+}
+
+.opcoes-container button {
+    width: 48%; /* Ajusta a largura dos botões das opções */
+    margin: 1.2% 1% /* Margem entre os botões */
+}
+
+div#pergunta {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 8px 0px;
+}
