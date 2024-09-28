@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciamento de historias</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #f0f8ff;
+        color: #333;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      .card {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card-header {
+        background-color: #fff200;
+      }
+      .btn-primary {
+        background-color: #fff869;
+        color: black;
+        border: none;
+      }
+      .btn-secondary {
+        background-color: #6c757d;
+        border: none;
+      }
+      .table {
+        background-color: white;
+      }
+      .footer {
+        background-color: #fff869;
+        color: white;
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+      }
+      button.btn-excluir, button.btn-excluir:hover {
+        background: red;
+        border-color: red;
+        color: #ffffff;
+        font-size: 15px;
+    }
+    button:focus {
+        outline: 0px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mb-4">História Sem Graça</h1>
 
+      <!-- Adicionar Nova historia -->
+      <div class="card mb-4">
+        <div class="card-header">Adicionar Nova historia</div>
+        <div class="card-body">
+          <form id="form-adicionar">
+            <div class="form-group">
+              <label for="descricaoAdicionar">Descrição:</label>
+              <input type="text" class="form-control" id="descricao" placeholder="Digite a descrição da nova historia" required/>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn-cadastrar">
+              Adicionar historia
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Input de Edição de historia -->
+      <div class="card mb-4">
+        <div class="card-header">Editar historia</div>
+        <div class="card-body">
+          <form id="form-editar">
+            <div class="form-group">
+              <label for="id-editar">ID:</label>
+              <input type="text" class="form-control" id="id-editar" placeholder="Id da historia" required readonly
+              />
+              <label class="mt-4" for="descricao-nova">Nova Descrição:</label>
+              <input type="text" class="form-control" id="descricao-nova" placeholder="Digite a nova descrição da historia" required/>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Editar historia
+            </button>
+            <button type="button" class="btn btn-secondary ml-2" id="btn-cancelar-edicao">
+              Cancelar
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Tabela de historias -->
+      <div class="card mb-5">
+        <div class="card-header">Lista de historias</div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Descrição</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="lista-historias"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      &copy; 2024 Gerenciamento de historias. Todos os direitos reservados.
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
